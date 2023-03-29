@@ -15,6 +15,9 @@ const express = require('express');
 // App Setup
 const app = express();
 
+// tell app that static files live in public folder
+app.use(express.static('public'));
+
 // Middleware
 //allow Express (our web framework) to render HTML templates and send them back to the client using a new function
 
