@@ -3,7 +3,7 @@
   <input type="text" name="term">
   <button type="submit">Search</button>
 </form>
-
+<div class="gifs">
 {{#each gifs}}
 {{!-- using properties of the gif (id, itemurl, url) to fill in information needed to render the gif --}}
     <div class="tenor-gif-embed" data-postid="{{this.id}}" data-share-method="host" data-width="500px"
@@ -12,3 +12,4 @@
       <a href="{{this.url}}"></a></div>
     <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 {{/each}}
+</div>
